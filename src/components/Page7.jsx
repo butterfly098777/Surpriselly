@@ -29,7 +29,7 @@ export default function Page7() {
           title: item.title || item.name,
           image: item.image?.startsWith("http")
             ? item.image
-            : `http://localhost:5000${item.image}`,
+            : `https://surpriselly.onrender.com${item.image}`,
           amount: item.price,
         }));
 
@@ -103,7 +103,7 @@ export default function Page7() {
     src={
       item.image.startsWith("http")
         ? item.image
-        : `http://localhost:5000${item.image}`
+        : `https://surpriselly.onrender.com${item.image}`
     }
     alt={item.title || item.name}
     className="w-full h-44 object-cover rounded-lg"
