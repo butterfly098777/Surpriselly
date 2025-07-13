@@ -3,22 +3,22 @@ import React from "react";
 const quirkyItems = [
   {
     title: "Birthday Gifts",
-    image: "https://i.imgur.com/1.png", // replace with real
+    image: "https://cdn.igp.com/f_auto,q_auto,t_pnopt12prodlp/products/p-happy-birthday-gift-tower-118435-m.jpg", // replace with real
     bg: "bg-pink-50",
   },
   {
     title: "For Friends",
-    image: "https://i.imgur.com/2.png",
+    image: "https://www.zwende.com/cdn/shop/products/Ashie_Artworks_Homeware_Mugs_Yellow_Girls_Src_4.jpg?v=1659012652&width=900",
     bg: "bg-orange-50",
   },
   {
     title: "Pop Culture",
-    image: "https://i.imgur.com/3.png",
+    image: "https://www.hopono-shop.com/cdn/shop/articles/1747661727.jpg?v=1747661730",
     bg: "bg-yellow-50",
   },
   {
     title: "Hatke Gifts",
-    image: "https://i.imgur.com/4.png",
+    image: "https://cdn0.weddingwire.in/vendor/7536/3_2/960/jpeg/whatsapp-image-2018-06-26-at-1-58-56-pm1_15_97536.jpeg",
     bg: "bg-yellow-100",
   },
 ];
