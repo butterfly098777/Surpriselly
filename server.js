@@ -10,7 +10,7 @@ const productRoutes = require("./routes/productRoutes");
 dotenv.config();
 
 const app = express();
-const dirname="C://Users//hp//Desktop//Surpriselly"
+const dirname = path.resolve(); // resolves to current folder in deployment
 // Middlewares
 app.use(cors());
 app.use(express.json());
