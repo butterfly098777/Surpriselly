@@ -19,7 +19,7 @@ export default function Page3() {
     const fetchProducts = async () => {
       try {
         const res = await fetch(
-          "http://localhost:5000/api/products?category=Tech%20%26%20Products"
+          "https://surpriselly.onrender.com/api/products?category=Tech%20%26%20Products"
         );
         const data = await res.json();
         const withAmount = data.map((item) => ({
