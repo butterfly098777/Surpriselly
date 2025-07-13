@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     // Fetch user count from server
-    fetch("http://localhost:5000/api/auth/count")
+    fetch("https://surpriselly.onrender.com/api/auth/count")
       .then((res) => res.json())
       .then((data) => setUserCount(data.count))
       .catch((err) => console.error("Failed to load user count:", err));
