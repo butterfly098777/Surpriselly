@@ -16,7 +16,7 @@ export default function Page6() {
   useEffect(() => {
     const fetchFashionProducts = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/products?category=Fashion%20%26%20Accessories");
+        const res = await fetch("https://surpriselly.onrender.com/api/products?category=Fashion%20%26%20Accessories");
         const data = await res.json();
 
         const normalized = data.map((item) => ({
