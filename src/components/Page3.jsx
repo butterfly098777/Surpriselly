@@ -108,7 +108,7 @@ export default function Page3() {
     src={
       item.image.startsWith("http")
         ? item.image
-        : `http://localhost:5000${item.image}`
+        : `https://surpriselly.onrender.com${item.image}`
     }
     alt={item.title || item.name}
     className="w-full h-44 object-cover rounded-lg"
