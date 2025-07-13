@@ -70,7 +70,7 @@ export default function Products() {
     formData.append("image", image);
 
     try {
-      const res = await fetch("http://localhost:5000/api/products", {
+      const res = await fetch("https://surpriselly.onrender.com/api/products", {
         method: "POST",
         body: formData,
       });
@@ -93,7 +93,7 @@ export default function Products() {
 
   const deleteProduct = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/products/${id}`, { method: "DELETE" });
+      await fetch(`https://surpriselly.onrender.com/api/products/${id}`, { method: "DELETE" });
       setProducts(products.filter((p) => p._id !== id));
     } catch (err) {
       console.error("Delete failed:", err);
@@ -119,7 +119,7 @@ export default function Products() {
 
   const saveEdit = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+      const res = await fetch(`https://surpriselly.onrender.com/api/products/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(editedProduct),
@@ -214,7 +214,7 @@ export default function Products() {
                   <td className="p-2">
                     {p.image ? (
                       <img
-                        src={`http://localhost:5000/${p.image}`}
+                        src={`https://surpriselly.onrender.com/${p.image}`}
                         alt="Product"
                         className="h-10 mx-auto"
                       />
