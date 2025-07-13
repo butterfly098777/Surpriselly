@@ -10,12 +10,12 @@ const productRoutes = require("./routes/productRoutes");
 dotenv.config();
 
 const app = express();
-
+const dirname="C://Users//hp//Desktop//Surpriselly-main"
 // Middlewares
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/uploads', express.static('uploads'));
+app.use('/uploads', express.static(path.join(dirname, 'uploads')));
 
 
 
@@ -31,6 +31,7 @@ mongoose
   })
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ MongoDB connection error:", err));
+
 
 // Start Server
 const PORT = process.env.PORT || 5000;
