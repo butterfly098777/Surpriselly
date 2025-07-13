@@ -25,7 +25,7 @@ app.use("/api/products",productRoutes);
 
 // MongoDB Connection
 mongoose
-  .connect(process.env.MONGO_URI || "mongodb+srv://pallavipatel8080:Surpriselly8080@cluster0.o1x2lzf.mongodb.net/?\retryWrites=true&w=majority&appName=Cluster0", {
+  .connect(process.env.MONGO_URI ||"mongodb+srv://pallavipatel8080:Surpriselly8080@cluster0.o1x2lzf.mongodb.net/surpriselly?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
