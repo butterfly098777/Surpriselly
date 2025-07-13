@@ -127,7 +127,7 @@ export default function Store() {
                   src={
                     item.image?.startsWith("http")
                       ? item.image
-                      : `http://localhost:5000${item.image || ""}`
+                      : `https://surpriselly.onrender.com${item.image || ""}`
                   }
                   alt={item.name}
                   className="w-full h-40 object-cover rounded"
