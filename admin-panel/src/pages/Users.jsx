@@ -4,7 +4,7 @@ export default function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/auth/all")
+    fetch("https://surpriselly.onrender.com/api/auth/all")
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch((err) => console.error("Failed to fetch users:", err));
