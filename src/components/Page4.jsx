@@ -16,7 +16,7 @@ export default function Page4() {
   const { toggleWishlist, isInWishlist } = useWishlist();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products?category=Toys%20%26%20Games")
+    fetch("https://surpriselly.onrender.com/api/products?category=Toys%20%26%20Games")
       .then((res) => res.json())
       .then((data) => {
         const normalized = data.map((item) => ({
