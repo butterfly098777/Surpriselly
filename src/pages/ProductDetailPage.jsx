@@ -18,7 +18,7 @@ export default function ProductDetailPage() {
   useEffect(() => {
     async function fetchProduct() {
       try {
-        const res = await fetch(`http://localhost:5000/api/products/slug/${slug}`);
+        const res = await fetch(`https://surpriselly.onrender.com/api/products/slug/${slug}`);
         if (!res.ok) throw new Error("Failed to fetch product");
         const data = await res.json();
         setProduct(data);
@@ -68,7 +68,7 @@ export default function ProductDetailPage() {
         {/* Left Section */}
         <div className="space-y-4">
           <img
-            src={`http://localhost:5000/${product.image}`}
+            src={`https://surpriselly.onrender.com/${product.image}`}
             alt={product.name}
             className="w-full h-[22rem] object-cover rounded-xl shadow"
           />  
