@@ -1,0 +1,59 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# dependencies
+node_modules/
+
+# production
+build/
+dist/
+
+# next.js
+.next/
+
+# dotenv environment variables
+.env
+
+# logs
+logs/
+*.log
+
+# system
+.DS_Store
+Thumbs.db
+
+
+# ---------React---------           npm run dev
+# npm install react-scripts --save
+# npm i react
+# npm i
+# npm audit fix
+# npm audit fix --force
+
+# ---------Nodejs---------
+#npm init -y
+# npm i node
+# npm i express
+# npm i dotenv

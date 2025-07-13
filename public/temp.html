@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inventory System</title>
+<link rel="stylesheet" href="/temp.css" />
+</head>
+<body>
+ <div class="layout">
+  <!-- Left: Main Form and Table -->
+  <div class="main-content">
+    <h1>Inventory System</h1>
+
+    <h3>Add Product</h3>
+    <form id="addProductForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="category" placeholder="Category">
+      <input type="text" id="brand" placeholder="Brand">
+      <input type="number" id="price" placeholder="Price" required>
+      <input type="number" id="stock" placeholder="Stock" required>
+      <button type="submit">Add</button>
+    </form>
+
+
+   <h3>Product List</h3>
+    <table id="productTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Brand</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+
+
+ <div class="inventory-container">
+  <div class="filter_products">
+    <!-- Filters go here -->
+    <h3>Filters</h3>
+    <label>Brand:
+      <select id="filterBrand"></select>
+    </label><br><br>
+    <label>Category:
+      <select id="filterCategory"></select>
+    </label><br><br>
+    <label>Min Price:
+      <input type="number" id="filterMinPrice" />
+    </label><br><br>
+    <label>Max Price:
+      <input type="number" id="filterMaxPrice" />
+    </label><br><br>
+    <button onclick="applyFilters()">Apply Filters</button>
+    <button onclick="clearFilters()">Clear</button>
+  </div>
+
+</div>
+</div>
+
+
+<script src="/temp.js" defer></script>
+ 
+</script>
+</body>
+</html>
