@@ -20,7 +20,15 @@ export default function Page8() {
   useEffect(() => {
     const fetchPetGifts = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/products?category=Pet%20Gifts");
+        const res = await fetch("
+  useEffect(() => {
+    const fetchJewelleryProducts = async () => {
+      try {
+        const res = await fetch("https://surpriselly.onrender.com/api/products?category=Jewellery");
+        const data = await res.json();
+
+        const normalized = data.map((item) => ({
+          ...item,/api/products?category=Pet%20Gifts");
         const data = await res.json();
 
         const normalized = data.map((item) => ({
