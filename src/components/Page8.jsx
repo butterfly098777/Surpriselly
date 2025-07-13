@@ -20,15 +20,7 @@ export default function Page8() {
   useEffect(() => {
     const fetchPetGifts = async () => {
       try {
-        const res = await fetch("
-  useEffect(() => {
-    const fetchJewelleryProducts = async () => {
-      try {
-        const res = await fetch("https://surpriselly.onrender.com/api/products?category=Jewellery");
-        const data = await res.json();
-
-        const normalized = data.map((item) => ({
-          ...item,/api/products?category=Pet%20Gifts");
+        const res = await fetch("https://surpriselly.onrender.com/api/products?category=Pet%20Gifts");
         const data = await res.json();
 
         const normalized = data.map((item) => ({
@@ -37,7 +29,7 @@ export default function Page8() {
           title: item.title || item.name,
          image: item.image?.startsWith("http")
   ? item.image
-  : `http://localhost:5000${item.image.startsWith("/") ? item.image : "/" + item.image}`,
+  : `https://surpriselly.onrender.com${item.image.startsWith("/") ? item.image : "/" + item.image}`,
           amount: item.price,
         }));
 
