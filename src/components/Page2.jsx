@@ -17,7 +17,7 @@ export default function Page2() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/products");
+        const res = await fetch("https://surpriselly.onrender.com/api/products");
         const data = await res.json();
 
         const withAmount = data.map((item) => ({
