@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api/products';
+const API_URL = 'https://surpriselly.onrender.com/api/products';
 
 let updateMode = false;
 let currentProductId = null;
