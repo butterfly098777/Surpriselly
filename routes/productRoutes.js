@@ -5,7 +5,7 @@ const multer = require("multer");
 const path = require("path");
 const slugify = require("slugify");
 const fs = require("fs");
-
+const dirname = path.resolve(); 
 // ✅ Multer: Image Upload Configuration
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -122,7 +122,7 @@ router.delete("/:id", async (req, res) => {
   try {
     const product = await Product.findByIdAndDelete(req.params.id);
     if (product?.image) {
-      const imgPath = path.join("C://Users//hp//Desktop//Surpriselly-main", "..", product.image);
+      const imgPath = path.join(dirname, "..", product.image);
       if (fs.existsSync(imgPath)) {
         fs.unlinkSync(imgPath);
       }
