@@ -90,7 +90,6 @@ export default function Products() {
       console.error("Add failed:", err.message);
     }
   };
-
   const deleteProduct = async (id) => {
     try {
       await fetch(`https://surpriselly.onrender.com/api/products/${id}`, { method: "DELETE" });
